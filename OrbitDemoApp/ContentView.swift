@@ -60,12 +60,17 @@ struct LoginScreen: View {
                     Label("Create", systemImage: selectedTab == 2 ? "plus.circle.fill" : "plus.circle")
                 }
                 .tag(2)
+            FriendScreen()
+                .tabItem {
+                    Label("Friends", systemImage: selectedTab == 3 ? "person.2.fill" : "person.2")
+                }
+                .tag(3)
             
             ProfileScreen()
                 .tabItem {
-                    Label("Profile", systemImage: selectedTab == 3 ? "person.fill" : "person")
+                    Label("Profile", systemImage: selectedTab == 4 ? "person.fill" : "person")
                 }
-                .tag(3)
+                .tag(4)
         }
         .accentColor(.blue)
     }
@@ -103,7 +108,7 @@ struct HomeScreen: View {
         }
         
         var body: some View {
-            VStack {
+            VStack() {
                 // Filter options as a horizontal scroll view of capsules
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
@@ -206,6 +211,15 @@ struct CreateScreen: View {
     var body: some View {
         VStack {
             Text("Create Screen")
+                .font(.largeTitle)
+        }
+    }
+}
+
+struct FriendScreen: View {
+    var body: some View {
+        VStack {
+            Text("Friend Screen")
                 .font(.largeTitle)
         }
     }
