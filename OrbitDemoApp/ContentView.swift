@@ -67,7 +67,7 @@ struct LoginScreen: View {
                 }
                 .tag(3)
         }
-        .accentColor(.blue)  // Highlight color of the selected tab
+        .accentColor(.blue)
     }
 }
 
@@ -134,7 +134,7 @@ struct HomeScreen: View {
                 }
             }
         }
-        .padding()
+
     }
     private func toggleInterest(_ interest: String) {
             if interest == "All" {

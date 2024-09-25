@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -30,21 +30,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		614338A42CA3307400A5593B /* OrbitDemoApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OrbitDemoApp;
-			sourceTree = "<group>";
-		};
-		614338B52CA3307600A5593B /* OrbitDemoAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OrbitDemoAppTests;
-			sourceTree = "<group>";
-		};
-		614338BF2CA3307600A5593B /* OrbitDemoAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OrbitDemoAppUITests;
-			sourceTree = "<group>";
-		};
+		614338A42CA3307400A5593B /* OrbitDemoApp */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OrbitDemoApp; sourceTree = "<group>"; };
+		614338B52CA3307600A5593B /* OrbitDemoAppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OrbitDemoAppTests; sourceTree = "<group>"; };
+		614338BF2CA3307600A5593B /* OrbitDemoAppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OrbitDemoAppUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +175,7 @@
 				};
 			};
 			buildConfigurationList = 6143389D2CA3307400A5593B /* Build configuration list for PBXProject "OrbitDemoApp" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,7 +184,6 @@
 			);
 			mainGroup = 614338992CA3307400A5593B;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 614338A32CA3307400A5593B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,6 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OrbitDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OrbitDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
