@@ -1,3 +1,11 @@
+//
+//  FriendScreen.swift
+//  OrbitDemoApp
+//
+//  Created by Nathaniel D'Orazio on 2024-09-25.
+//
+
+
 import SwiftUI
 
 struct FriendScreen: View {
@@ -7,4 +15,7 @@ struct FriendScreen: View {
                 .font(.largeTitle)
         }
     }
+}
+#Preview {
+    FriendScreen()
 }

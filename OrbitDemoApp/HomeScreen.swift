@@ -1,3 +1,11 @@
+//
+//  HomeScreen.swift
+//  OrbitDemoApp
+//
+//  Created by Nathaniel D'Orazio on 2024-09-25.
+//
+
+
 import SwiftUI
 
 struct HomeScreen: View {
@@ -46,8 +54,10 @@ struct HomeScreen: View {
                         UserCard(user: user)
                             .frame(maxWidth: .infinity, minHeight: 150)
                             .background(Color.orange.opacity(0.3))
+                            .foregroundColor(.blue)
                             .cornerRadius(10)
                             .padding(.horizontal)
+                            
                     }
                 }
             }
@@ -70,8 +80,53 @@ struct HomeScreen: View {
     }
 }
 
+// Custom view for a user card
+struct UserCard: View {
+    var user: User
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(user.name)
+                .font(.headline)
+            Text(" \(user.interests.joined(separator: ", "))")
+                .font(.footnote)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+
 struct User: Identifiable {
     let id = UUID()
     let name: String
     let interests: [String]
+}
+
+struct ProfileView: View {
+    var user: User
+    
+    var body: some View {
+        VStack {
+            Text(user.name)
+                .font(.largeTitle)
+                .bold()
+            
+            Text("Interests:")
+                .font(.headline)
+            
+            ForEach(user.interests, id: \.self) { interest in
+                Text(interest)
+            }
+            .padding(.top, 5)
+            
+            Spacer()
+        }
+        .padding()
+        .navigationTitle("Profile")
+    }
+}
+
+#Preview {
+    HomeScreen()
 }

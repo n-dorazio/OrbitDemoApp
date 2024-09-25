@@ -1,3 +1,11 @@
+//
+//  ProfileScreen.swift
+//  OrbitDemoApp
+//
+//  Created by Nathaniel D'Orazio on 2024-09-25.
+//
+
+
 import SwiftUI
 
 struct ProfileScreen: View {
@@ -9,26 +17,6 @@ struct ProfileScreen: View {
     }
 }
 
-struct ProfileView: View {
-    var user: User
-    
-    var body: some View {
-        VStack {
-            Text(user.name)
-                .font(.largeTitle)
-                .bold()
-            
-            Text("Interests:")
-                .font(.headline)
-            
-            ForEach(user.interests, id: \.self) { interest in
-                Text(interest)
-            }
-            .padding(.top, 5)
-            
-            Spacer()
-        }
-        .padding()
-        .navigationTitle("Profile")
-    }
+#Preview {
+    ProfileScreen()
 }
